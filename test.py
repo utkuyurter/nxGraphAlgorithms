@@ -7,7 +7,7 @@ from functionsClass import *
 from booleanChecks import *
 
 #print(average_degree(G))
-H = nx.davis_southern_women_graph()
+#H = nx.davis_southern_women_graph()
 #nx.draw(H)
 #print(f'minimum_degree: {minimum_degree(H)}')
 #print('')
