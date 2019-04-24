@@ -7,7 +7,7 @@ from greedyColoring import greedy_coloring
 from independence import independence_number
 from havelHakimi import residue
 from matching import matching_number
-from clique import clique_number
+#from clique import clique_number
 
 G = nx.read_edgelist("graph_library/G1.txt")
 
@@ -36,4 +36,4 @@ print(greedy_coloring(G))
 print(independence_number(G))
 print(residue(G))
 print(matching_number(G))
-print(clique_number(G))
+#print(clique_number(G))
