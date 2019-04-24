@@ -3,30 +3,8 @@
 #Discrete Math - Graph Theory
 
 
-from functionsClass import *
+from functions.globalProperties import E, V, N
 from itertools import combinations
-
-
-def is_matching(G, M):
-    result = True
-    lst = []
-    for e in M:
-        lst.append(e[0])
-        lst.append(e[1])
-    for e in lst:
-        if(lst.count(e) > 1):
-            result = False
-    return result
-
-
-def is_independent_set(G, S):
-    result = True
-    for e in S:
-        for v in S:
-            if (e , v) in E(G):
-                result = False
-                break
-    return result
 
 
 def is_Clique(G, S):
@@ -44,6 +22,14 @@ def is_Clique(G, S):
                 break
     return result
 
+
+#def max_clique(G):
+
+
+
+
+#def clique_number(G):
+#    return len(max_clique(G))
 
 
 def is_triangle_free(G, S):
