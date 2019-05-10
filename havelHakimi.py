@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-#Author: Utku Yurter , University Of Houston - Downtown
+#Authors: Utku Yurter , Jonathan Menjivar
 #Discrete Math - Graph Theory
 
 from functions.globalProperties import degree_sequence, V
@@ -23,10 +23,6 @@ def H_H_process(L, show=False):
         if show:
             print(L)
     return None
-
-def isGraphic(L):
-    H_H_process(L)
-    return sum(L) == 0
 
 def residue(G):
     L = degree_sequence(G)

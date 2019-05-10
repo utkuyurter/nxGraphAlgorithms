@@ -1,9 +1,8 @@
 # -*- coding: utf-8 -*-
-#Author: Utku Yurter , University Of Houston - Downtown
+#Authors: Utku Yurter , Jonathan Menjivar
 #Discrete Math - Graph Theory
 
 from functions.globalProperties import V
-
 
 def greedy_coloring(G):
     color_matching = {}

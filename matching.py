@@ -1,21 +1,10 @@
 # -*- coding: utf-8 -*-
-#Author: Utku Yurter , University Of Houston - Downtown
+#Authors: Utku Yurter , Jonathan Menjivar
 #Discrete Math - Graph Theory
 
 
 from functions.globalProperties import N, E
-
-
-def is_matching(G, M):
-    result = True
-    lst = []
-    for e in M:
-        lst.append(e[0])
-        lst.append(e[1])
-    for e in lst:
-        if(lst.count(e) > 1):
-            result = False
-    return result
+from functions.booleanFunctions import is_matching
 
 def max_matching(G):
     Vertex = set()

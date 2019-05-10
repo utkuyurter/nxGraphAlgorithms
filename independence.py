@@ -1,18 +1,12 @@
 # -*- coding: utf-8 -*-
-#Author: Utku Yurter , University Of Houston - Downtown
+#Authors: Utku Yurter , Jonathan Menjivar
 #Discrete Math - Graph Theory
 
 import networkx as nx
 from itertools import combinations
 from functions.globalProperties import V, N
 from functions.localProperties import neighbors
-
-
-def is_independent (G, S):
-    for v in S:
-        if list(set(S) & set(neighbors(G, v))) !=[]:
-            return False
-    return True
+from functions.booleanFunctions import is_independent
 
 
 def maximum_independent_set(G):
